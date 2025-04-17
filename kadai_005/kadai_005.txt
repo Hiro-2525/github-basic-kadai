@@ -1,0 +1,42 @@
+PS C:\Users\gwtwv\Documents\git_tutorial\git_challenge> git add hello_world.txt 
+PS C:\Users\gwtwv\Documents\git_tutorial\git_challenge> git commit -m "hello_world.txtを追加"
+[main (root-commit) 7eb430c] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS C:\Users\gwtwv\Documents\git_tutorial\git_challenge> git log
+commit 7eb430c1d213ccf68703b1d69d7eff8529950978 (HEAD -> main)
+Author: Hiro-2525 <gwtwvallgh@yahoo.co.jp>
+Date:   Thu Apr 17 11:40:40 2025 +0900
+
+    hello_world.txtを追加
+PS C:\Users\gwtwv\Documents\git_tutorial\git_challenge> git diff
+diff --git a/hello_world.txt b/hello_world.txt
+index b45ef6f..d7e4bac 100644
+--- a/hello_world.txt
++++ b/hello_world.txt
+@@ -1 +1,2 @@
+-Hello, World!
+\ No newline at end of file
++Hello, World!
++こんにちわ、世界！
+\ No newline at end of file
+PS C:\Users\gwtwv\Documents\git_tutorial\git_challenge> git add .
+PS C:\Users\gwtwv\Documents\git_tutorial\git_challenge> git commit -m "日本語訳を追"  
+[main 25c5fbd] 日本語訳を追
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\gwtwv\Documents\git_tutorial\git_challenge> git commit --amend -m "日本語訳を追記"
+[main 7984154] 日本語訳を追記
+ Date: Thu Apr 17 11:41:52 2025 +0900
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\gwtwv\Documents\git_tutorial\git_challenge> git log
+commit 798415453f9e943e6f8220a83fc2e1f7e6f4b244 (HEAD -> main)
+Author: Hiro-2525 <gwtwvallgh@yahoo.co.jp>
+Date:   Thu Apr 17 11:41:52 2025 +0900
+
+    日本語訳を追記
+
+commit 7eb430c1d213ccf68703b1d69d7eff8529950978
+Author: Hiro-2525 <gwtwvallgh@yahoo.co.jp>
+Date:   Thu Apr 17 11:40:40 2025 +0900
+
+    hello_world.txtを追加
